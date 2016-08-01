@@ -1,6 +1,6 @@
-module PStemmer.Internal.Function (
+module NLP.PStemmer.Internal.Function (
   module PST,
-  module PStemmer.Internal.Function,
+  module NLP.PStemmer.Internal.Function,
   fromMaybe,
   first, second, (***), (&&&)) where
 
@@ -8,7 +8,7 @@ module PStemmer.Internal.Function (
   import qualified Data.List as DL
   import qualified Data.Ord as DO
   import Data.Maybe (fromMaybe)
-  import PStemmer.Types as PST
+  import NLP.PStemmer.Types as PST
   import Control.Arrow (second, first, (***), (&&&))
 
   applySteps :: T.Text -> [Step] -> T.Text

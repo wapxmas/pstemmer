@@ -1,4 +1,4 @@
-module PStemmer.Types where
+module NLP.PStemmer.Types where
 
   import qualified Data.Text as T
 

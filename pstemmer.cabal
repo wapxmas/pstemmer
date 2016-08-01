@@ -15,9 +15,9 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     PStemmer.Internal.Function
-                     , PStemmer.Types
-                     , PStemmer.Ru
+  exposed-modules:     NLP.PStemmer.Internal.Function
+                     , NLP.PStemmer.Types
+                     , NLP.PStemmer.Ru
   build-depends:       base >= 4.7 && < 5
                      , text >= 1.2 && < 1.4
   ghc-options:         -W -Wall

@@ -1,10 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module PStemmer.Ru where
+module NLP.PStemmer.Ru where
 
   import qualified Data.Text as T
 
-  import PStemmer.Internal.Function
+  import NLP.PStemmer.Internal.Function
 
   type ListG = [(T.Text, [T.Text])]
 
@@ -152,7 +152,9 @@ module PStemmer.Ru where
       chkV :: T.Text -> T.Text -> Bool
       chkV t1 t2 = (T.head t1 `elem` vowels) && (T.head t2 `notElem` vowels)
 
-  -- | Data of Poter stemmer for Russian language
+  -- -----------------------------------------------------------------------------
+  -- * Data of Poter stemmer for Russian language
+
   neccSuff :: String
   neccSuff = "ая"
 

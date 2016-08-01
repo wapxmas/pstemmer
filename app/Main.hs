@@ -3,7 +3,7 @@
 module Main where
 
   import Data.Text.IO as TIO
-  import PStemmer.Ru
+  import NLP.PStemmer.Ru
 
   main :: IO ()
   main = TIO.putStrLn $ runPorter "бегавшая"
